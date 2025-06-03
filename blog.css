@@ -1,0 +1,466 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.wrap {
+    margin: 0 auto;
+    max-width: 100%;
+    background: #FBFBFB;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    gap: 40px;
+}
+
+.menu a {
+    display: inline;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.menu ul {
+    gap: 40px;
+}
+
+.blog {
+    display: flex;
+    margin: auto;
+}
+
+.img-left {
+    flex: 1;
+}
+
+.img-right {
+    flex: 1;
+    position: relative;
+}
+
+.img-left img {
+    width: 100%;
+    height: 834px;
+}
+
+.img-right img {
+    width: 100%;
+    height: 834px;
+}
+
+@media (max-width: 768px) {
+    .wrap {
+        margin: auto;
+        justify-content: center;
+    }
+
+    .menu {
+        padding: 24px 16px;
+    }
+
+    .menu a {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+}
+
+
+.blog-text {
+    position: absolute;
+    color: #0027D5;
+    top: 40%;
+    right: 25%;
+
+}
+
+.blog-text h2 {
+    font-size: 120px;
+    line-height: 1.5;
+    font-weight: bolder;
+}
+
+.blog-text p {
+    font-size: 28px;
+}
+
+@media (max-width: 768px) {
+    .blog-text {
+        flex-direction: column;
+        padding-top: 5%;
+        margin-left: 50px;
+    }
+
+    .blog {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        height: auto;
+    }
+}
+
+.about-section {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.about-section img {
+    flex: 1;
+    width: 100%;
+    padding-right: 60px;
+}
+
+.about-section-content {
+    flex: 1;
+    line-height: 150%;
+}
+
+.about-section-content-txt {
+    width: 636px;
+}
+
+.content-title {
+    font-size: 24px;
+    color: #0027D5;
+    line-height: 150%;
+}
+
+.h2 {
+    font-weight: bolder;
+    line-height: 150%;
+    font-size: 28px;
+
+}
+
+.intro {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 48px;
+    line-height: 150%;
+}
+
+.newpost {
+    color: whitesmoke;
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 40px;
+    font-size: 12px;
+    margin-left: 10px;
+    padding: 5px;
+
+}
+
+.btn a {
+    color: #4B4B4B;
+    border: 2px solid #000000;
+    border-radius: 40px;
+    font-size: 12px;
+    margin-left: 10px;
+    padding: 8px 16px;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .about-section img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .about-section-content {
+        width: 100%;
+        padding: 48px 16px;
+    }
+}
+
+.search {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 48px;
+    padding-left: 16px;
+    border: 2px solid #4B4B4B;
+    border-radius: 40px;
+    width: 416px;
+    margin-top: 80px;
+    margin-left: 312px;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.blog-txt {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.photo {
+    width: 436px;
+}
+
+.photo img {
+    width: 100%;
+}
+
+.content {
+    width: 436px;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-wrap: wrap;
+        width: calc(80% - 10px);
+        max-width: 600px;
+        margin: 0 auto 20px auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .blog-detail {
+        flex-wrap: wrap;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .blog-txt {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .blog-txt img {
+        height: 150px;
+    }
+
+    .blog-txt h2 {
+        font-size: 18px;
+    }
+}
+
+.page-btn {
+    margin: auto;
+    width: 328px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    line-height: 150%;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 40px;
+    padding: 8px 20px;
+    margin-bottom: 80px;
+}
+
+.page-btn a {
+    color: #4B4B4B;
+    text-align: center;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    padding: 80px 312px;
+}
+
+.email p {
+    width: 1036px;
+    text-align: left;
+}
+
+.social-media {
+    display: flex;
+}
+
+
+
+footer {
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+footer p {
+    font-size: 16px;
+    text-align: center;
+    padding: 24px 5%;
+
+}
+
+@media (max-width: 768px) {
+    .email {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        max-width: 100%;
+    }
+
+    footer p {
+        max-width: 100%;
+        padding: 24px 0;
+    }
+}
